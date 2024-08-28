@@ -2,7 +2,11 @@
 
 An example of an API which extracts named entities from a provided user query.
 
-I have not load tested it at all yet.
+Some notes:
+
+- I have not load tested it at all
+
+- The model is being downloaded on the first client request (making it very slow). The model download should be moved to the Dockerfile (i.e. to the image build step)
 
 Deploy it on a google Cloud Run service as follows:
 
