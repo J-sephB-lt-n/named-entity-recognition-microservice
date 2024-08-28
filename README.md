@@ -1,5 +1,11 @@
 # named-entity-recognition-microservice
 
+An example of an API which extracts named entities from a provided user query.
+
+I have not load tested it at all yet.
+
+Deploy it on a google Cloud Run service as follows:
+
 ```bash
 GCP_PROJ_ID='your-gcp-proj-id'
 GCP_REGION='europe-west2'
@@ -24,4 +30,3 @@ make deploy \
   CLOUD_RUN_SERVICE_NAME=$CREATE_CLOUD_RUN_SERVICE_NAME \
   DOCKER_IMG_URI=$DOCKER_IMG_URI
 ```
-
